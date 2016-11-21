@@ -13,8 +13,8 @@
 		9281CC2A1DE2A15700643607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9281CC281DE2A15700643607 /* Main.storyboard */; };
 		9281CC2C1DE2A15700643607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9281CC2B1DE2A15700643607 /* Assets.xcassets */; };
 		9281CC2F1DE2A15700643607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9281CC2D1DE2A15700643607 /* LaunchScreen.storyboard */; };
-		9281CC391DE2A18600643607 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 9281CC381DE2A18600643607 /* People.m */; };
-		9281CC3C1DE2A19100643607 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9281CC3B1DE2A19100643607 /* Manager.m */; };
+		9281CC411DE2A35800643607 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9281CC3E1DE2A35800643607 /* Manager.m */; };
+		9281CC421DE2A35800643607 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 9281CC401DE2A35800643607 /* People.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		9281CC2B1DE2A15700643607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9281CC2E1DE2A15700643607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9281CC301DE2A15700643607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9281CC371DE2A18600643607 /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
-		9281CC381DE2A18600643607 /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
-		9281CC3A1DE2A19100643607 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
-		9281CC3B1DE2A19100643607 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		9281CC3D1DE2A35800643607 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Manager.h; path = FMDB_Realm/Manager.h; sourceTree = SOURCE_ROOT; };
+		9281CC3E1DE2A35800643607 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Manager.m; path = FMDB_Realm/Manager.m; sourceTree = SOURCE_ROOT; };
+		9281CC3F1DE2A35800643607 /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = People.h; path = FMDB_Realm/People.h; sourceTree = SOURCE_ROOT; };
+		9281CC401DE2A35800643607 /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = People.m; path = FMDB_Realm/People.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +89,10 @@
 		9281CC361DE2A17700643607 /* Realm_fmcb */ = {
 			isa = PBXGroup;
 			children = (
-				9281CC371DE2A18600643607 /* People.h */,
-				9281CC381DE2A18600643607 /* People.m */,
-				9281CC3A1DE2A19100643607 /* Manager.h */,
-				9281CC3B1DE2A19100643607 /* Manager.m */,
+				9281CC3D1DE2A35800643607 /* Manager.h */,
+				9281CC3E1DE2A35800643607 /* Manager.m */,
+				9281CC3F1DE2A35800643607 /* People.h */,
+				9281CC401DE2A35800643607 /* People.m */,
 			);
 			path = Realm_fmcb;
 			sourceTree = "<group>";
@@ -128,6 +128,7 @@
 				TargetAttributes = {
 					9281CC1B1DE2A15700643607 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = S783ZLB9W4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -168,11 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9281CC391DE2A18600643607 /* People.m in Sources */,
 				9281CC271DE2A15700643607 /* ViewController.m in Sources */,
 				9281CC241DE2A15700643607 /* AppDelegate.m in Sources */,
-				9281CC3C1DE2A19100643607 /* Manager.m in Sources */,
+				9281CC421DE2A35800643607 /* People.m in Sources */,
 				9281CC211DE2A15700643607 /* main.m in Sources */,
+				9281CC411DE2A35800643607 /* Manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S783ZLB9W4;
 				INFOPLIST_FILE = cocoapadsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezparking.ios.cocoapadsTest;
@@ -301,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S783ZLB9W4;
 				INFOPLIST_FILE = cocoapadsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezparking.ios.cocoapadsTest;
@@ -327,6 +330,7 @@
 				9281CC351DE2A15700643607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
